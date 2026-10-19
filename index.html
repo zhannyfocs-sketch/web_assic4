@@ -25,6 +25,83 @@
                                 <label class="btn btn-outline-success rounded-pill border-0 fw-semibold" for="roundTrip"> Round trip</label>
                             </div>
                         </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="fromInput" class="form-label text-muted small fw-bold">From</label>
+                                <input type="text" class="form-control rounded-3 py-2" id="fromInput" value="Astana" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="toInput" class="form-label text-muted small fw-bold">To</label>
+                                <input type="text" class="form-control rounded-3 py-2" id="toInput" value="Almaty" required>
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-4">
+                                <label for="departureInput" class="form-label text-muted small fw-bold">Departure</label>
+                                <input type="date" class="form-control rounded-3 py-2" id="departureInput" required>
+                            </div>
+                            <div class="col-md-4">
+                               <label for="returnInput" class="form-label text-muted small fw-bold">Return</label>
+                                <input type="date" class="form-control rounded-3 py-2" id="returnInput">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="passengersInput" class="form-label text-muted small fw-bold">Passengers</label>
+                                <select class="form-select rounded-3 py-2" id="passengerInput" required>
+                                    <option value="1" selected>1 adult</option>
+                                    <option value="2">2 adults</option>
+                                    <option value="3">3 adults</option>
+                                    <option value="4">4 adults</option>
+                                    <option value="5">5 adults</option>
+                                    <option value="6">6 adults</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small fw-bold d-block">Carriage class</label>
+                            <div class="d-flex gap-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="carriageClass" id="seatClass" required>
+                                    <label class="form-check-label" for="seatClass">Seat</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="carriageClass" id="coupeClass" required>
+                                    <label class="form-check-label" for="coupeClass">Coupé</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="carriageClass" id="sleeperClass" required>
+                                    <label class="form-check-label" for="sleeperClass">Sleeper</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="phoneInput" class="form-label text-muted small fw-bold">Phone</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-success text-white border-0 rounded-start-3">+7</span>
+                                    <input type="tel" class="form-control rounded-3 py-2" id="phoneInput" placeholder="7012345678" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="emailInput" class="form-label text-muted small fw-bold">Email</label>
+                                <input type="email" class="form-control rounded-3 py-2" id="emailInput" placeholder="name@example.com" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="smsCheck">
+                                <label class="form-check-label" for="smsCheck">Also send the ticket by SMS</label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rulesCheck" required>
+                                <label class="form-check-label" for="rulesCheck">I agree with the carriage rules</label>
+
+                            </div>
+                            <div class="d-flex flex-column flex-md-row gap-3 justify-content-end">
+                                <button type="reset" class="btn btn-outline-dark rounded-pill px-4 py-2 order-2 order-md-1">Clear</button>
+                                <button type="submit" class="btn btn-warning text-white fw-bold rounded-pill px-5 py-2 order-1 order-md-2 btn-find">Find trains</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

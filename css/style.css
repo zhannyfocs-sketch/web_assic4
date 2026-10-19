@@ -1,0 +1,30 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F4F7F5;
+}
+.brand-header {
+    background-color: #0F6B5F;
+}
+.btn-find {
+    background-color: #F2A93B;
+    border-color: #F2A93B;
+    color: #16302B;
+}
+.btn-find:hover {
+    background-color: #D89531;
+    border-color: #D89531;
+}
+.btn-outline-success {
+    color: #0F6B5F !important;
+    background-color: #ffffff !important;
+    border-color: transparent !important;
+}
+.btn-outline-success:hover {
+    background-color: #E6EFEC !important;
+    color: #0F6B5F !important;
+}
+.btn-check:checked + .btn-outline-success {
+    background-color: #0F6B5F !important;
+    color: #ffffff !important;
+    border-color: #0F6B5F !important;
+}
