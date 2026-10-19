@@ -14,29 +14,27 @@
                     <h1 class="mb-4 text-center fw-bold">Reserve a table</h1>
                     <form>
                         <div class="mb-3">
-                            <label for="name" class="form-label fw-semibold">Your name *</label>
+                            <label for="name" class="form-label fw-semibold">Your name</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label fw-semibold">Email *</label>
+                            <label for="email" class="form-label fw-semibold">Email</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
                         </div>
                         <div class="mb-3">
-                            <label for="phone" class="form-label fw-semibold">Phone *</label>
+                            <label for="phone" class="form-label fw-semibold">Phone</label>
                             <input type="tel" class="form-control" id="phone" name="phone" placeholder="+7 (701) 234-56-78" required>
-                        </div>
+                        </div>z
                         <div class="mb-3">
-                            <label for="guests" class="form-label fw-semibold">Guests *</label>
+                            <label for="guests" class="form-label fw-semibold">Guests</label>
                             <input type="number" class="form-control" id="guests" name="guests" min="1" max="10" value="2" required>
                         </div>
-
-                        <!-- Date -->
                         <div class="mb-3">
-                            <label for="date" class="form-label fw-semibold">Date *</label>
+                            <label for="date" class="form-label fw-semibold">Date</label>
                             <input type="date" class="form-control" id="date" name="date" required>
                         </div>
                         <fieldset class="mb-3">
-                            <legend class="form-label fw-semibold fs-6">Seating *</legend>
+                            <legend class="form-label fw-semibold fs-6">Seating</legend>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="seating" id="seatingInside" value="Inside" checked required>
                                 <label class="form-check-label" for="seatingInside">Inside</label>
@@ -47,7 +45,7 @@
                             </div>
                         </fieldset>
                         <div class="mb-3">
-                            <label for="mealTime" class="form-label fw-semibold">Meal Time *</label>
+                            <label for="mealTime" class="form-label fw-semibold">Meal Time</label>
                             <select class="form-select" id="mealTime" name="mealTime" required>
                                 <option value="" selected disabled>Choose meal...</option>
                                 <option value="Lunch">Lunch</option>
@@ -60,7 +58,7 @@
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
-                            <label class="form-check-label" for="terms">I agree to the terms *</label>
+                            <label class="form-check-label" for="terms">I agree to the terms</label>
                         </div>
                         <div class="d-grid">
                             <button type="submit" class="btn btn-primary">Reserve</button>
